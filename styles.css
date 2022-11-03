@@ -1,0 +1,242 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1.2px;
+}
+p{
+  text-align: justify;
+  
+}
+/*Estilos de header*/
+.header{
+  margin: auto;
+  width: 100%;
+  height: 60px;
+  background-color:  rgb(0, 0, 0);
+}
+.header .contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo, .icon-menu{
+ 
+  color: rgb(250, 249, 249);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.logo{
+   margin-right: 100px;
+}
+
+
+.icon-menu{
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  background-color: #2E4053;
+  color: #b3b6b780;
+  text-align: center;
+  padding-top: 3px;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav{
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: 1s;
+}
+.menu{
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu__link{
+  display: block;
+  padding: 20px;
+  background-color: #2E4053;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+.contenedor{
+  margin: auto;
+  width: 100%;
+}
+.menu__link:hover, select{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-decoration: none;
+}
+.mostrar{
+  left: 0;
+}
+h1{
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+h3{
+  color: #ff0000;
+}
+
+ .office {
+   border-radius: 10px;
+   width: 100%;
+   height:"300px";
+   box-shadow: -2px 3px 12px rgba(5, 5, 5, 0.7);
+ }
+
+ .office:hover{
+   box-shadow: 3px -4px 10px rgba(5, 5, 5, 0.7);
+ }
+
+ .content-img{
+    display: flex;
+    justify-content: space-around;
+ }
+
+
+ .container-cards{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 50px;
+
+ }
+
+ .card{
+    border-color: #123;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 380px;
+    height: 350px;
+    box-shadow: 2px 3px 10px rgba(5, 5, 5, 0.7);
+    padding: 12px;
+ }
+
+ .card:hover{
+   box-shadow: -2px -4px 10px rgba(5, 5, 5, 0.7);
+   transform: scale(1.01);
+ }
+
+ .card img {
+  
+   width: 80%;
+   height: 35%;
+  
+ }
+.parrafo{
+padding: 10px;
+
+margin-top: 20px;
+margin-right: 5%;
+margin-left: 3%;
+width: 96%;
+height: max-content;
+background-color: rgb(247, 241, 241);
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 8px;
+box-shadow: 5px 6px 13px rgba(5, 5, 5, 0.7);
+
+}
+.parrafo:hover{
+  box-shadow: -4px -6px 13px rgba(5, 5, 5, 0.7);
+}
+
+.leer {
+   width: 90px;
+   background: #265486;
+   padding: 5px 10px;
+   border-bottom-left-radius: 8px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-size: 18px;
+   box-shadow: 5px 2px 2px rgba(2, 2, 1, 0.7);
+}
+
+.leer a{
+  text-decoration: none;
+  color: wheat;
+}
+
+.leer:hover{
+    border-top-left-radius: 1px;
+    transform: scale(1.3);
+    
+}
+
+.ofimatica{
+   text-align: start;
+   color: #123;
+   font-size: 24px;
+}
+
+.ofimatica span{
+   font-size: 32px;
+   color: #ff0000;
+   font-weight: bold;
+   line-height: 6px;
+}
+
+@media(min-width:1024px){
+  .contenedor{
+      width: 1000px;
+  }
+  .nav{
+      position: static;
+      width: auto;
+  }
+  .menu{
+      display: flex;
+  }
+  .icon-menu{
+      display: none;
+  }
+  .menu__link{
+      background: none;
+  }
+  .select{
+      color: #000000;
+      background: rgb(248, 248, 248);
+  }
+
+  .banner__titulo{
+      font-size: 60px;
+      margin: 5px 0;
+  }
+  .banner .contenedor{
+      top: 35%;
+  }
+  .banner__txt{
+      display: block;
+      font-size: 30px;
+      margin: 7px 0;
+  }
+  .info__titulo{
+      font-size: 50px;
+      margin: 5px 0;
+  }
+  
+
+  
+
+}
+
